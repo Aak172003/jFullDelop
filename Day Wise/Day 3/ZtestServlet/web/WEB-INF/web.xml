@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    
+    <!--Run One servlet at a Time-->  
+    
+    <!--  1st Method servlet decleration--> 
+    <servlet>
+        
+        <!--By Servlet Interface--> 
+        
+        <servlet-name>FirstServlets</servlet-name>
+        <servlet-class>com.servlets.FirstServlets</servlet-class>
+        
+    </servlet>
+    
+    <!--  2nd Method servlet decleration--> 
+    <servlet>
+        
+        <!--By Generic Servlet Class--> 
+        
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>com.servlets.SecondServlet</servlet-class>
+    </servlet>
+    
+    <!-- 1st Method mapping--> 
+    <servlet-mapping>
+        <!--By Servlet Interface--> 
+        
+        <servlet-name>FirstServlets</servlet-name>
+        <url-pattern>/firstServlet</url-pattern>
+
+    </servlet-mapping>
+    
+    <!-- 2nd Method Method mapping--> 
+    <servlet-mapping>
+                
+        <!-- By Generic Servlet Class--> 
+        
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/secondServlet</url-pattern>
+        
+    </servlet-mapping>
+
+</web-app>

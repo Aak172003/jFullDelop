@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formPage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .form{
+                text-align: center;
+                background-color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div> 
+            <h1 class="form">Form Data </h1>
+            <br><!-- comment -->
+
+            <div>
+                <button><a href="home.html">Go to Home Page </a></button>
+            </div>
+            <form action="registeredUser" method ="post">
+                <table>
+                    <tr>
+                        <td>Enter Your Name</td>
+                        <td><input type="text" name="user_name" placeholder ="Enter your name" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Enter Your Password</td>
+                        <td><input type="password" name="user_pass" placeholder ="Enter your password" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Enter Your Email</td>
+                        <td><input type="email" name="user_email" placeholder ="Enter your e-mail" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Select Your Course
+                        </td>
+                        <td>
+                            <select name="user_course">
+                                <option value="Java"> Java</option>
+                                <option value="C++">C++</option>
+                                <option value="Python">Python</option>
+                                <option value="JavaScript">JavaScript</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td style="text-align: right">
+                            <input type="checkbox" value="checked" name="condition" />
+                        </td>
+                        <td>
+                            Agree Terms And Conditions
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <button type="submit">Submit Me</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                    <h1>Hello </h1>
+                </table>
+            </form>
+
+
+        </div>
+    </body>
+</html>
